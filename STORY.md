@@ -1,0 +1,26 @@
+# PRECINCT 84: CASE I — *BLUE VELVET*
+**Setting:** Rain-soaked Oakridge City, November 1984 — 84th Precinct ("The Harbor Watch")  
+**Protagonist:** **Officer Marcus Mercer (Badge #084)** — African American night-watch officer, cool under pressure, principled, and bucking for Narcotics Detective by doing things strictly by the book.  
+**Partner:** **Officer Claire Bellamy (Badge #089)** — White female officer, slender, striking dark brunette hair tied back under her cap, sharp-witted and fiercely loyal. To Marcus and everyone in the 84th, she is the best partner on the beat. *(Only in Case III will Marcus discover she was the quiet conduit feeding precinct timings to the Man in the Beige Raincoat.)*
+
+---
+
+## ACT I: THE NIGHT SHIFT BEGINS (Precinct 84)
+1. **Roll Call in the Briefing Room (21:30 Hours):** Sgt. Frank Dooley briefs the Night Watch on **Blue Velvet**—high-purity synthetic heroin stamped with a crown-and-anchor seal—and posts a BOLO for a black 1983 Chevrolet Monte Carlo (`4X-8821`) driven by **Eddie "Skids" Rourke**.
+2. **Locker Room Load-Out (21:45 Hours):** Marcus equips his duty belt (.38 Special revolver, handcuffs, Motorola HT-220 portable radio, PR-24 baton, notebook), Field Evidence Kit, and Unit 84 keys while Claire signs the patrol sheet upstairs.
+3. **Motor Pool Walk-Around (21:55 Hours):** Marcus inspects all four sides of Patrol Unit 84, discovers a rusted roofing nail in the front-left tire before it can cause a high-speed blowout, checks trunk gear, fastens his seatbelt, and calls **`10-8` (in service)** with Claire riding shotgun.
+
+## ACT II: THE CROSSWALK, THE CHASE & THE FLIP
+1. **The Red Light at 4th & Union (22:18 Hours):** Waiting at a red light in pouring rain, an ordinary, mild-mannered man in a damp beige raincoat, wire-rimmed glasses, crooked black umbrella, tarnished brass pocket watch, and carrying a white *Rossi's Pastries* box tied with red baker's twine crosses in front of Unit 84's headlights and gives a polite nod. Nobody notices him.
+2. **The High-Speed Pursuit (22:19 Hours):** The BOLO black '83 Monte Carlo (`4X-8821`) blasts through the red light. Engaging **Code 3** (lights & siren) and calling **`10-80`**, Marcus weaves past a spinning fish-delivery van at 7th & Market, navigates blind diesel smoke behind a jackknifing tanker on the Harbor Expressway viaduct, loses Rourke temporarily, and tracks fresh muddy ruts and radiator steam into Dead-End Rail Yard #3 where Rourke slams into a fence.
+3. **Felony Stop & Interrogation (22:28–23:10 Hours):** Marcus and Claire execute a textbook 7-step High-Risk Felony Stop—taking cover, drawing weapons, ordering Rourke out, holstering before cuffing, searching him (recovering a switchblade and Motorola burner pager `084-CHEM // RM 209`), reading Miranda rights, and bagging 4 kilos of Blue Velvet from the trunk. Under recorded interrogation in Room B, confronted with the stamped bricks and blinking pager, Rourke flips on **Marco "The Chemist" Vega** at **Starlight Motor Court, Room 209**.
+
+## ACT III: THE CHEMIST'S TRAIL (Starlight Motor Court)
+1. **Room 209 Door Trap & Alley Capture (23:45 Hours):** Calling **`10-97` (arrived at scene)**, Marcus spots a copper shotgun tripwire rigged to the doorknob, steps aside out of the fatal funnel before knocking, survives the 12-gauge blast through the wood, chases Vega into the alley, and cuffs & Mirandizes him as Claire blocks the street mouth.
+2. **Clandestine Lab Forensics (00:05 Hours):** Inside Room 209, Marcus notices a stray curl of **red baker's twine and cannoli crumbs** on the worktable, then dusts the hidden wall safe for latent prints, lifts a print matching **Victor "The Viper" Castellano**, and decodes Vega's ledger revealing 200 kilos shipping tonight at 0200 from **Pier 84 Cold Storage & Cannery** under Warrant Code **`HARBOR-84-OMEGA`**.
+
+## ACT IV: THE BIG TAKEDOWN AT PIER 84 & THE FINAL TWIST
+1. **Perimeter & Tactical Breach (01:25 Hours):** Marcus radios Metro SWAT and backup with Warrant Code `HARBOR-84-OMEGA`, cuts the exterior alarm wires, signals the flashbang breach, takes cover behind a forklift, holds fire when lab assistants surrender, and neutralizes an armed catwalk enforcer pinning Claire.
+2. **Upper Office Showdown (01:40 Hours):** Marcus and Claire disarm Castellano beside an incinerator, holster, cuff and Mirandize him, and rescue the Master Syndicate Ledger from the flames.
+3. **The Man at the Crosswalk (01:46–01:50 Hours):** On Castellano's desk sit a second steaming teacup, an untied *Rossi's Pastries* box with red baker's twine, and wet umbrella drips. Terrified, Castellano whispers that the real boss told him two polite cops in Unit 84 let him cross 4th & Union right before Rourke blew the intersection. Stepping outside the yellow police tape, Marcus spots the exact same unassuming man in the beige raincoat across the tracks checking his brass pocket watch before a freight train roars past and he vanishes—leaving only a wet piece of red twine on the storm drain.
+4. **Epilogue (09:00 Hours):** Promoted to Narcotics Detective alongside Sgt. Dooley and Claire (who drops off a *Rossi's Pastries* cannoli bag in his new bullpen), Marcus locks the red baker's twine inside **`CASE FILE #84-002 // "THE MAN AT THE CROSSWALK"`**. *To be continued in Case II...*

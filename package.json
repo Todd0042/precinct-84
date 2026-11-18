@@ -1,0 +1,24 @@
+{
+  "name": "precinct-84",
+  "version": "1.0.0",
+  "description": "Precinct 84: Case I - Blue Velvet. Animated EGA/VGA half-block detective & beat-cop parser in the terminal.",
+  "type": "module",
+  "bin": {
+    "precinct-84": "./bin/precinct-84.js"
+  },
+  "scripts": {
+    "start": "node ./bin/precinct-84.js",
+    "test": "node ./tests/e2e-campaign.test.js",
+    "test:e2e": "node ./tests/e2e-campaign.test.js"
+  },
+  "keywords": [
+    "police-quest",
+    "text-adventure",
+    "parser",
+    "ega",
+    "ansi",
+    "tui",
+    "detective"
+  ],
+  "license": "MIT"
+}
