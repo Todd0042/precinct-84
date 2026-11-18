@@ -341,18 +341,19 @@ async function testSaveRestoreManualRendererAudioAndCli() {
     assert.ok(wavFiles.siren && fs.existsSync(wavFiles.siren), 'Siren WAV should synthesize cleanly');
     assert.ok(wavFiles.gameover && fs.existsSync(wavFiles.gameover), 'Game Over WAV should synthesize cleanly');
 
-    // End-to-End CLI subprocess test (--no-audio --dump-frame --script)
-    const { stdout, stderr } = await execFileAsync('node', [
-      path.join(PROJECT_ROOT, 'bin/precinct-84.js'),
-      '--no-audio',
-      '--dump-frame',
-      '--script',
-      'listen briefing; look blackboard; go locker; open locker; take belt; take keys; go yard; inspect tires',
+    const saveQuitRes = executeCommand(goState, 'save and quit');
+    assert.equal(saveQuitRes.meta?.quit, true, 'save and quit must trigger quit metadata even in Game Over');
+    assert.ok(fs.existsSync(saveQuitRes.meta.savePath), 'save and quit must persist save file');
+    const cliRun = await execFileAsync('node', [
+      path.join(PROJECT_ROOT, 'bin/precinct-84.js'), '--no-audio', '--dump-frame', '--script',
+      'listen briefing; look blackboard; go locker; open locker; take belt; take keys; go yard; inspect tires; save and quit; look sky',
     ]);
-    assert.equal(stderr.trim(), '', 'CLI should not print errors to stderr');
-    assert.match(stdout, /▀/, 'CLI --dump-frame should output EGA half-block graphics');
-    assert.match(stdout, /4X-8821/, 'CLI output should contain BOLO details');
-    assert.match(stdout, /nail/i, 'CLI output should reflect tire inspection discovery');
+    assert.equal(cliRun.stderr.trim(), '', 'CLI should not print errors to stderr');
+    assert.match(cliRun.stdout, /▀/, 'CLI --dump-frame should output EGA half-block graphics');
+    assert.match(cliRun.stdout, /4X-8821/, 'CLI output should contain BOLO details');
+    assert.match(cliRun.stdout, /nail/i, 'CLI output should reflect tire inspection discovery');
+    assert.match(cliRun.stdout, /Exiting Precinct 84/, 'save and quit should log exit');
+    assert.ok(!cliRun.stdout.includes('> look sky'), 'CLI must halt script after save and quit');
   } finally {
     fs.rmSync(tmpDir, { recursive: true, force: true });
   }

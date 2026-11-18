@@ -245,6 +245,13 @@ export function parseCommand(rawInput) {
   if (/\b(signal breach|breach)\b/.test(normalized)) {
     return { raw, normalized, verb: 'breach', noun: 'pier', target: 'pier', code, words };
   }
+  const saveQuitMatch = normalized.match(
+    /^save(?:\s+(?!and\b|then\b|quit\b|exit\b)([a-z0-9_-]+))?(?:\s+(?:and|then))?\s+(?:quit|exit)$/
+  );
+  if (saveQuitMatch) {
+    const slot = saveQuitMatch[1] || 'quicksave';
+    return { raw, normalized, verb: 'save_quit', noun: slot, target: slot, code, words };
+  }
 
   const first = words[0] || rawWords[0];
   let verb = VERB_SYNONYMS[first] || first;

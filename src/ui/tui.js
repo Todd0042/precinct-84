@@ -58,6 +58,11 @@ export function startInteractiveTui({ initialState, audioEnabled = true }) {
       audio.play(res.sfx);
     }
     render();
+    if (res.meta?.quit) {
+      cleanup();
+      if (res.text) console.log(res.text);
+      process.exit(0);
+    }
   }
 
   function handleToolbarAction(action) {

@@ -28,6 +28,9 @@ function runScriptMode({ script, dumpFrame }) {
     for (const line of res.output) {
       console.log(`  ${line}`);
     }
+    if (res.meta?.quit) {
+      break;
+    }
   }
 
   if (dumpFrame) {

@@ -57,11 +57,28 @@ function handleMetaCommand(prevState, cmd, output) {
     };
   }
 
-  if (cmd.verb === 'save') {
+  if (cmd.verb === 'save' || cmd.verb === 'save_quit') {
     const next = cloneState(prevState);
-    const filePath = saveGame(next, cmd.noun || 'quicksave');
-    addLog(next, output, 'SYSTEM', `Saved game to ${filePath}`);
-    return { state: next, output, text: output.join('\n'), sfx: 'tick', scoreDelta: 0, sceneChanged: false, gameOver: next.gameOver, victory: next.victory };
+    const slot = cmd.noun || 'quicksave';
+    const filePath = saveGame(next, slot);
+    const shouldQuit = cmd.verb === 'save_quit';
+    addLog(
+      next,
+      output,
+      'SYSTEM',
+      shouldQuit ? `Saved game to ${filePath}. Exiting Precinct 84...` : `Saved game to ${filePath}`
+    );
+    return {
+      state: next,
+      output,
+      text: output.join('\n'),
+      sfx: 'tick',
+      scoreDelta: 0,
+      sceneChanged: false,
+      gameOver: next.gameOver,
+      victory: next.victory,
+      ...(shouldQuit ? { meta: { quit: true, savedSlot: slot, savePath: filePath } } : {}),
+    };
   }
 
   if (cmd.verb === 'restore') {

@@ -9,7 +9,7 @@ An illustrated EGA/VGA half-block detective and beat-cop parser game for the ter
 - **Strict Police-Procedure Fail States & Undo:** Violating real police procedure (skipping the pre-watch tire walk-around, forgetting your seatbelt, approaching an un-cuffed suspect or cuffing with your gun drawn, interrogating without Miranda or tape, walking into a door trap, or breaching Pier 84 without SWAT) triggers a Sierra-style procedural citation with instant **`[U]` / `undo`** recovery.
 - **Built-in Patrolman's Field Guide (`[F1]` / `manual`):** Pocket manual covering Radio 10-Codes, Motor Pool Walk-Around, 7-Step Felony Stop Checklist, Interrogation & Forensics, and Use-of-Force rules.
 - **Retro PC Speaker / AdLib Synth Audio:** Procedurally synthesizes `.wav` cues (wail siren, Motorola radio squelch, keystrokes, handcuffs ratchet, gunshot, point chime, Sierra game-over dirge) and plays them non-blockingly via `ffplay` when available (`--no-audio` or `[F2]` to mute).
-- **Save & Restore Slots:** Persistent JSON save slots (`save <name>`, `restore <name>`, or `[F5]` quick save).
+- **Save & Restore Slots:** Persistent JSON save slots (`save <name>`, `restore <name>`, `[F5]` quick save, or `save and quit` / `save <name> and quit` to save and exit immediately from any point in the game).
 
 ## Quick Start
 
