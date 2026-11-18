@@ -4,7 +4,7 @@ An illustrated EGA/VGA half-block detective and beat-cop parser game for the ter
 
 ## Features
 
-- **Animated EGA/VGA Half-Block Viewport:** Truecolor 24-bit ANSI (`▀`) pixel framebuffer (`60x20` virtual resolution inside a `60x23` terminal layout) rendering animated rain, sweeping windshield wipers, pulsing red/blue emergency lightbars, neon motel signs, harbor searchlights, and crime-scene tape across 15 scene states.
+- **High-Res Animated EGA/VGA Half-Block Viewport:** Truecolor 24-bit ANSI (`▀`) pixel framebuffer (`128x64` native virtual resolution inside a `128x46` high-res terminal layout, scaling proportionally to smaller terminals when needed) rendering animated rain, sweeping windshield wipers, pulsing red/blue emergency lightbars, flickering neon motel signs, harbor searchlights, and crime-scene tape across 15 richly detailed scenes.
 - **Classic Sierra Verb-Noun Natural Parser:** Supports flexible verb-noun commands (`inspect tires`, `look pedestrian`, `turn on lights`, `radio 10-80`, `draw weapon`, `holster weapon`, `cuff suspect`, `read miranda`, `dust safe`, `stand aside`, `return fire`) plus Tab-completable and SGR mouse-clickable verb/noun chips.
 - **Strict Police-Procedure Fail States & Undo:** Violating real police procedure (skipping the pre-watch tire walk-around, forgetting your seatbelt, approaching an un-cuffed suspect or cuffing with your gun drawn, interrogating without Miranda or tape, walking into a door trap, or breaching Pier 84 without SWAT) triggers a Sierra-style procedural citation with instant **`[U]` / `undo`** recovery.
 - **Built-in Patrolman's Field Guide (`[F1]` / `manual`):** Pocket manual covering Radio 10-Codes, Motor Pool Walk-Around, 7-Step Felony Stop Checklist, Interrogation & Forensics, and Use-of-Force rules.
@@ -43,11 +43,12 @@ node ./bin/precinct-84.js --no-audio --dump-frame --script "listen briefing; loo
 Every JavaScript module is kept cleanly modular and strictly under 400 lines:
 
 - `bin/precinct-84.js` — CLI entrypoint supporting interactive TUI and `--script` batch playback.
-- `src/engine/palette.js` — 16-color Sierra EGA + atmospheric night-noir RGB palette & ANSI color helpers.
-- `src/engine/framebuffer.js` — Virtual pixel canvas (`60x20` default, scaling logical `76x32` coordinates) rendering crisp half-block (`▀`) ANSI lines.
-- `src/engine/art-primitives.js` — Shared rain, emergency lightbar, character, cruiser, cockpit, and citation overlays.
-- `src/engine/art-act1-2.js` — Animated half-block scenes for Acts I & II (precinct, crosswalk, pursuit, interrogation).
-- `src/engine/art-act3-4.js` — Animated half-block scenes for Acts III & IV (motel, forensics lab, Pier 84, finale).
+- `src/engine/palette.js` — 16-color Sierra EGA + atmospheric night-noir VGA tonal palette & ANSI color helpers.
+- `src/engine/framebuffer.js` — High-res `128x64` virtual pixel canvas (with scanline polygons, Bayer/checkerboard EGA dither fills, ellipses, and proportional fallback scaling) rendering crisp half-block (`▀`) ANSI lines.
+- `src/engine/art-primitives.js` — Shared city skyline, wet asphalt, rain streaks, lightbars, and high-res sprites (Marcus, Claire, Raincoat Man).
+- `src/engine/art-vehicles.js` — Detailed Unit 84 patrol cruiser, '83 Monte Carlo, and animated cockpit dashboard HUD.
+- `src/engine/art-overlays.js` — Procedural violation overlay banner.
+- `src/engine/art-act1.js`, `src/engine/art-act2.js`, `src/engine/art-act3.js`, `src/engine/art-act4.js` — Full high-res (`128x64`) illustrated scenes for Acts I–IV & Epilogue following `STORY.md`.
 - `src/engine/art.js` — Scene art dispatcher and `SCENE_IDS` registry.
 - `src/engine/audio.js` — Procedural PCM `.wav` synthesizer and `ffplay` runner.
 - `src/engine/parser.js` — Sierra-style verb-noun parser with synonym normalization and radio-code detection.
